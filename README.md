@@ -6,9 +6,16 @@ this is a set of jekyll includes for embedding media.
 
 ### include
 
+Here's how you can include a media list within a theme:
+
     {% if post.media %}
-      {% include media/media.html media=post.media %}
+      {% include media.html media=post.media %}
     {% endif %}
+
+If you want to include a single media object, you can use medium.html:
+
+    {% include medium.html media=post.image %}
+
 
 ### yaml frontmatter
 
