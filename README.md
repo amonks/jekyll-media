@@ -4,8 +4,6 @@ This is a set of jekyll includes for embedding media.
 
 It can handle images, bootstrap carousels, and embeds for Bandcamp, Soundcloud, and Vimeo.
 
-It's used on this very website.
-
 <!--more-->
 
 ## usage
