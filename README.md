@@ -1,13 +1,14 @@
 # jekyll-media
+
 This is a set of jekyll includes for embedding media.
 
 It can handle images, bootstrap carousels, and embeds for Bandcamp, Soundcloud, and Vimeo.
 
+It's used on this very website.
+
 <!--more-->
 
 ## usage
-
-First put jekyll-media into your _includes folder.
 
 ### include
 
@@ -24,7 +25,7 @@ If you want to include a single media object, you can use medium.html:
 
 ### yaml frontmatter
 
-Media embeds will show up in the order in which they're listed.
+media embeds will show up in the order in which they're listed here
 
     media:
       -
@@ -55,3 +56,8 @@ Media embeds will show up in the order in which they're listed.
           -
             alt: Collage 3
             url: /images/collage/3.jpg
+
+### _config.yml
+
+    media:
+      image-class: img-responsive
