@@ -1,25 +1,30 @@
 # jekyll-media
+This is a set of jekyll includes for embedding media.
 
-this is a set of jekyll includes for embedding media.
+It can handle images, bootstrap carousels, and embeds for Bandcamp, Soundcloud, and Vimeo.
+
+<!--more-->
 
 ## usage
+
+First put jekyll-media into your _includes folder.
 
 ### include
 
 Here's how you can include a media list within a theme:
 
     {% if post.media %}
-      {% include media.html media=post.media %}
+      {% include jekyll-media/media.html media=post.media %}
     {% endif %}
 
 If you want to include a single media object, you can use medium.html:
 
-    {% include medium.html media=post.image %}
+    {% include jekyll-media/medium.html media=post.image %}
 
 
 ### yaml frontmatter
 
-media embeds will show up in the order in which they're listed here
+Media embeds will show up in the order in which they're listed.
 
     media:
       -
