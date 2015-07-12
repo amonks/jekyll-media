@@ -1,0 +1,10 @@
+<img
+  src="{{include.medium.url}}"
+  alt="{{include.medium.alt}}"
+  {% if site.media.image-class %}
+    class="{{site.media.image-class}}"
+  {% endif %}
+  {% if include.media.title %}
+    title="{{include.medium.title}}"
+  {% endif %}
+/>

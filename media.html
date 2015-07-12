@@ -1,0 +1,25 @@
+{% for medium in include.media %}
+  {% case medium.type %}
+    {% when 'image' %}
+      {% if medium.link %}
+        <a href="{{ medium.link }}">
+          {% include media/image.html medium=medium  %}
+        </a>
+      {% else %}
+        {% include media/image.html medium=medium %}
+      {% endif %}
+
+    {% when 'vimeo' %}
+      {% include media/vimeo.html medium=medium  %}
+
+    {% when 'bandcamp' %}
+      {% include media/bandcamp.html medium=medium  %}
+
+    {% when 'soundcloud' %}
+      {% include media/soundcloud.html medium=medium  %}
+
+    {% when 'images' %}
+      {% include media/carousel.html medium=medium  %}
+
+  {% endcase %}
+{% endfor %}
